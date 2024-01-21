@@ -21,7 +21,8 @@ public class TOFCommand extends Command {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-      m_tof.setRange("Short", 33);
+      m_tof.setRange("short", 20);
+      m_tof.setViewZone(8, 8, 12, 12);
   }
 
   // Called every time the scheduler runs while the command is scheduled.
